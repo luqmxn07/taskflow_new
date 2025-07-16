@@ -1,0 +1,144 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+main {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Timer Section */
+.timer-section {
+  text-align: center;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+#time {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.timer-buttons button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #60a5fa;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.timer-buttons button:hover {
+  background-color: #3b82f6;
+}
+
+/* To-Do List Section */
+.todo-section {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.todo-section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.todo-input {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#taskInput {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+}
+
+#addTaskBtn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #6ee7b7;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#addTaskBtn:hover {
+  background-color: #34d399;
+}
+
+#taskList {
+  list-style: none;
+}
+
+#taskList li {
+  background-color: #f3f4f6;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Motivational Quote Section */
+.quote-section {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-style: italic;
+  text-align: center;
+  color: #6b7280;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  #time {
+    font-size: 3rem;
+  }
+
+  .timer-buttons button {
+    font-size: 0.9rem;
+  }
+}
